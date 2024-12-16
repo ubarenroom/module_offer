@@ -22,30 +22,6 @@
         </arguments>
     </virtualType>
 
-    <virtualType name="Dnd\OfferManager\OfferImageUpload" type="Dnd\OfferManager\Model\ImageUploader">
-        <arguments>
-            <argument name="baseTmpPath" xsi:type="string">wysiwyg/tmp/offer</argument>
-            <argument name="basePath" xsi:type="string">wysiwyg/offer</argument>
-            <argument name="allowedExtensions" xsi:type="array">
-                <item name="jpg" xsi:type="string">jpg</item>
-                <item name="jpeg" xsi:type="string">jpeg</item>
-                <item name="gif" xsi:type="string">gif</item>
-                <item name="png" xsi:type="string">png</item>
-            </argument>
-            <argument name="allowedMimeTypes" xsi:type="array">
-                <item name="jpg" xsi:type="string">image/jpg</item>
-                <item name="jpeg" xsi:type="string">image/jpeg</item>
-                <item name="gif" xsi:type="string">image/gif</item>
-                <item name="png" xsi:type="string">image/png</item>
-            </argument>
-        </arguments>
-    </virtualType>
-    <type name="Dnd\OfferManager\Controller\Adminhtml\Offer\Image\Upload">
-        <arguments>
-            <argument name="imageUploader" xsi:type="object">Dnd\OfferManager\OfferImageUpload</argument>
-        </arguments>
-    </type>
-
     <type name="Magento\Framework\Model\Entity\RepositoryFactory">
         <arguments>
             <argument name="entities" xsi:type="array">
