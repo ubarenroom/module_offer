@@ -1,16 +1,15 @@
 {
   "name": "ubarenroom/module-offer-manager",
-  "version": "1.2.0",
   "description": "Magento 2 module offer Manager",
   "type": "magento2-module",
   "require": {
     "php": "~8.1.0||~8.2.0||~8.3.0",
-    "magento/framework": "*",
-    "magento/module-backend": "*",
-    "magento/module-catalog": "*"
+    "magento/framework": "103.0.*",
+    "magento/module-backend": "102.0.*",
+    "magento/module-catalog": "104.0.*"
   },
   "license": [
-    "Proprietary"
+    "proprietary"
   ],
   "autoload": {
     "files": [
