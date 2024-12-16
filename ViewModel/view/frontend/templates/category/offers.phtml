@@ -1,0 +1,39 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php
+/**
+ * Category view template
+ *
+ * @var $block \Magento\Catalog\Block\Category\View
+ * @var $viewModel \Dnd\OfferManager\ViewModel\Category\Offer
+ * @var $escaper \Magento\Framework\Escaper
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate.FoundThis
+// phpcs:disable Generic.WhiteSpace.ScopeIndent.IncorrectExact
+// phpcs:disable Magento2.Security.LanguageConstruct.DirectOutput
+
+$viewModel = $block->getViewModel();
+$offers = $viewModel->getOffers($block->getCurrentCategory());
+?>
+<?php if ($offers): ?>
+    <div class="slick-slider">
+        <?php foreach ($offers as $offer):?>
+            <?php if ($offer->getImage()): ?>
+                <div class="item">
+                    <a href="<?= $escaper->escapeHtmlAttr($offer->getLink())?>">
+                        <img class="image" style="height:150px"
+                             src="<?= $escaper->escapeUrl($viewModel->getImageUrl($offer->getImage()))?>"
+                             alt="<?= $escaper->escapeHtmlAttr($offer->getLabel())?>"
+                             title="<?= $escaper->escapeHtmlAttr($offer->getLabel())?>"
+                        />
+                    </a>
+                </div>
+            <?php endif;?>
+        <?php endforeach;?>
+    </div>
+<?php endif;?>
