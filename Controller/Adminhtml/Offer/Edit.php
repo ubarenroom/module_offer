@@ -56,8 +56,6 @@ class Edit extends Action implements HttpGetActionInterface
                 $this->messageManager->addErrorMessage($e->getMessage());
             }
         }
-
-        // 5. Build edit form
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
         $resultPage->setActiveMenu('Ubarenroom_OfferManager::offer');

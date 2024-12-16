@@ -104,9 +104,6 @@ class Save extends \Magento\Backend\App\Action implements HttpPostActionInterfac
                 }
                 $this->dataPersistor->clear('offer');
                 $this->messageManager->addSuccessMessage(__('You saved the offer.'));
-            } catch (LocalizedException $e) {
-                $this->messageManager->addErrorMessage($e->getMessage());
-                return $resultRedirect->setPath('*/*/');
             } catch (\Exception $e) {
                 $this->messageManager->addExceptionMessage($e, __('Something went wrong while saving the offer.'));
                 return $resultRedirect->setPath('*/*/');
