@@ -4,7 +4,7 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="Dnd_OfferManager::offer" sortOrder="10" title="Dnd Offer Manager"/>
+                <resource id="Ubarenroom_OfferManager::offer" sortOrder="10" title="Ubarenroom Offer Manager"/>
             </resource>
         </resources>
     </acl>

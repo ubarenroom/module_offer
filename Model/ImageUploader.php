@@ -1,6 +1,6 @@
 <?php
 
-namespace Dnd\OfferManager\Model;
+namespace Ubarenroom\OfferManager\Model;
 
 use Exception;
 use Magento\Framework\App\Filesystem\DirectoryList;

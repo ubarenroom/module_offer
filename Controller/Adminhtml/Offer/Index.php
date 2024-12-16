@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Dnd\OfferManager\Controller\Adminhtml\Offer;
+namespace Ubarenroom\OfferManager\Controller\Adminhtml\Offer;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
@@ -15,7 +15,7 @@ class Index extends Action implements HttpGetActionInterface
     /**
      * Authorization level of a basic admin session.
      */
-    public const ADMIN_RESOURCE = 'Dnd_OfferManager::offer';
+    public const ADMIN_RESOURCE = 'Ubarenroom_OfferManager::offer';
 
     /**
      * @param Context $context
@@ -36,7 +36,7 @@ class Index extends Action implements HttpGetActionInterface
     public function execute(): Page
     {
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('Dnd_OfferManager::offer');
+        $resultPage->setActiveMenu('Ubarenroom_OfferManager::offer');
         $resultPage->getConfig()->getTitle()->prepend(__('Offers Grid'));
 
         return $resultPage;

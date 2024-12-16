@@ -80,7 +80,7 @@
                 <label translate="true">Label</label>
             </settings>
         </column>
-        <column name="image" class="Dnd\OfferManager\Ui\Component\Offer\Listing\Column\Image">
+        <column name="image" class="Ubarenroom\OfferManager\Ui\Component\Offer\Listing\Column\Image">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/thumbnail</item>
@@ -115,7 +115,7 @@
             </settings>
         </column>
         <actionsColumn name="actions"
-                       class="Dnd\OfferManager\Ui\Component\Offer\Listing\Column\Actions" sortOrder="200">
+                       class="Ubarenroom\OfferManager\Ui\Component\Offer\Listing\Column\Actions" sortOrder="200">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="resizeEnabled" xsi:type="boolean">false</item>

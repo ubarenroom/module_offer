@@ -1,12 +1,12 @@
 <?php
-namespace Dnd\OfferManager\Model;
+namespace Ubarenroom\OfferManager\Model;
 
-use Dnd\OfferManager\Api\OfferRepositoryInterface;
-use Dnd\OfferManager\Api\Data\OfferInterface;
-use Dnd\OfferManager\Api\Data\OfferSearchResultsInterface;
-use Dnd\OfferManager\Api\Data\OfferSearchResultsInterfaceFactory;
-use Dnd\OfferManager\Model\ResourceModel\Offer as OfferResource;
-use Dnd\OfferManager\Model\ResourceModel\Offer\CollectionFactory as OfferCollectionFactory;
+use Ubarenroom\OfferManager\Api\OfferRepositoryInterface;
+use Ubarenroom\OfferManager\Api\Data\OfferInterface;
+use Ubarenroom\OfferManager\Api\Data\OfferSearchResultsInterface;
+use Ubarenroom\OfferManager\Api\Data\OfferSearchResultsInterfaceFactory;
+use Ubarenroom\OfferManager\Model\ResourceModel\Offer as OfferResource;
+use Ubarenroom\OfferManager\Model\ResourceModel\Offer\CollectionFactory as OfferCollectionFactory;
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Exception\CouldNotSaveException;
@@ -145,7 +145,7 @@ class OfferRepository implements OfferRepositoryInterface
         }
 
         $offerCollection->getSelect()->join(
-            ['oc' => $this->offerResource->getTable('dnd_offer_category')],
+            ['oc' => $this->offerResource->getTable('ubarenroom_offer_category')],
             'main_table.offer_id = oc.offer_id',
             []
         )->where('oc.category_id = ?', $categoryId);

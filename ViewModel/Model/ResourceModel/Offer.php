@@ -1,12 +1,12 @@
 <?php
-namespace Dnd\OfferManager\Model\ResourceModel;
+namespace Ubarenroom\OfferManager\Model\ResourceModel;
 
 use Magento\Framework\EntityManager\EntityManager;
 use Magento\Framework\EntityManager\MetadataPool;
 use Magento\Framework\Model\AbstractModel;
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 use Magento\Framework\Model\ResourceModel\Db\Context;
-use Dnd\OfferManager\Api\Data\OfferInterface;
+use Ubarenroom\OfferManager\Api\Data\OfferInterface;
 
 class Offer extends AbstractDb
 {
@@ -30,7 +30,7 @@ class Offer extends AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('dnd_offer', 'offer_id');
+        $this->_init('ubarenroom_offer', 'offer_id');
     }
 
     /**
@@ -47,7 +47,7 @@ class Offer extends AbstractDb
         $linkField = $entityMetadata->getLinkField();
 
         $select = $connection->select()
-            ->from(['category' => $this->getTable('dnd_offer_category')], 'category_id')
+            ->from(['category' => $this->getTable('ubarenroom_offer_category')], 'category_id')
             ->join(
                 ['offer' => $this->getMainTable()],
                 'offer.' . $linkField . ' = category.' . $linkField,

@@ -1,9 +1,9 @@
 <?php
-namespace Dnd\OfferManager\Model\ResourceModel\Offer\Relation;
+namespace Ubarenroom\OfferManager\Model\ResourceModel\Offer\Relation;
 
 use Magento\Framework\EntityManager\MetadataPool;
 use Magento\Framework\EntityManager\Operation\ExtensionInterface;
-use Dnd\OfferManager\Model\ResourceModel\Offer;
+use Ubarenroom\OfferManager\Model\ResourceModel\Offer;
 
 class ReadHandler implements ExtensionInterface
 {

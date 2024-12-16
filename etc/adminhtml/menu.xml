@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Dnd_OfferManager::offer" title="Offers" module="Dnd_OfferManager"
-             sortOrder="1000" action="offer/offer/index" resource="Dnd_OfferManager::offer"/>
+        <add id="Ubarenroom_OfferManager::offer" title="Offers" module="Ubarenroom_OfferManager"
+             sortOrder="1000" action="offer/offer/index" resource="Ubarenroom_OfferManager::offer"/>
     </menu>
 </config>

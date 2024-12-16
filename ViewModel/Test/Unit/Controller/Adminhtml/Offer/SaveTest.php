@@ -1,18 +1,18 @@
 <?php
-namespace Dnd\OfferManager\Test\Unit\Controller\Adminhtml\Offer;
+namespace Ubarenroom\OfferManager\Test\Unit\Controller\Adminhtml\Offer;
 
-use Dnd\OfferManager\Controller\Adminhtml\Offer\Save;
+use Ubarenroom\OfferManager\Controller\Adminhtml\Offer\Save;
 use Magento\Backend\App\Action\Context;
 use Magento\Backend\Model\View\Result\Redirect;
 use Magento\Backend\Model\View\Result\RedirectFactory;
 use Magento\Framework\App\Request\Http;
 use Magento\Framework\App\RequestInterface;
 use Magento\Framework\Message\ManagerInterface;
-use Dnd\OfferManager\Api\OfferRepositoryInterface;
-use Dnd\OfferManager\Model\OfferFactory;
-use Dnd\OfferManager\Model\Offer;
+use Ubarenroom\OfferManager\Api\OfferRepositoryInterface;
+use Ubarenroom\OfferManager\Model\OfferFactory;
+use Ubarenroom\OfferManager\Model\Offer;
 use Magento\Framework\App\Request\DataPersistorInterface;
-use Dnd\OfferManager\Model\ImageUploader;
+use Ubarenroom\OfferManager\Model\ImageUploader;
 use Magento\Framework\Stdlib\DateTime\Filter\Date;
 use Magento\Framework\Stdlib\DateTime\TimezoneInterface;
 use PHPUnit\Framework\TestCase;

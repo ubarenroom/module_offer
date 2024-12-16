@@ -4,7 +4,7 @@
  * All rights reserved.
  */
 
-namespace Dnd\OfferManager\Ui\Component\Offer\Listing\Column;
+namespace Ubarenroom\OfferManager\Ui\Component\Offer\Listing\Column;
 
 use Magento\Framework\View\Element\UiComponentFactory;
 use Magento\Framework\View\Element\UiComponent\ContextInterface;

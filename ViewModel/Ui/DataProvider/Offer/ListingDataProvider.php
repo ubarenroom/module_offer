@@ -4,7 +4,7 @@
  * All rights reserved.
  */
 
-namespace Dnd\OfferManager\Ui\DataProvider\Offer;
+namespace Ubarenroom\OfferManager\Ui\DataProvider\Offer;
 
 use Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider;
 

@@ -1,8 +1,8 @@
 <?php
-namespace Dnd\OfferManager\Block\Adminhtml\Offer\Edit;
+namespace Ubarenroom\OfferManager\Block\Adminhtml\Offer\Edit;
 
 use Magento\Backend\Block\Widget\Context;
-use Dnd\OfferManager\Api\OfferRepositoryInterface;
+use Ubarenroom\OfferManager\Api\OfferRepositoryInterface;
 use Magento\Framework\Exception\NoSuchEntityException;
 
 class GenericButton

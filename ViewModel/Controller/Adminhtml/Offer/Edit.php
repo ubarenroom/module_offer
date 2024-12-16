@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Dnd\OfferManager\Controller\Adminhtml\Offer;
+namespace Ubarenroom\OfferManager\Controller\Adminhtml\Offer;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
@@ -9,7 +9,7 @@ use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\View\Result\Page;
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Framework\App\Request\DataPersistorInterface;
-use Dnd\OfferManager\Model\Offer;
+use Ubarenroom\OfferManager\Model\Offer;
 
 /**
  * Controller for the 'offer/edit/index' URL route.
@@ -19,7 +19,7 @@ class Edit extends Action implements HttpGetActionInterface
     /**
      * Admin Resource
      */
-    public const ADMIN_RESOURCE = 'Dnd_OfferManager::offer';
+    public const ADMIN_RESOURCE = 'Ubarenroom_OfferManager::offer';
 
     /**
      * @param Context $context
@@ -60,7 +60,7 @@ class Edit extends Action implements HttpGetActionInterface
         // 5. Build edit form
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('Dnd_OfferManager::offer');
+        $resultPage->setActiveMenu('Ubarenroom_OfferManager::offer');
         $resultPage->getConfig()->getTitle()->prepend($label);
 
         return $resultPage;

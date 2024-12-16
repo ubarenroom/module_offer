@@ -1,8 +1,8 @@
 <?php
-namespace Dnd\OfferManager\Test\Unit\ViewModel\Category;
+namespace Ubarenroom\OfferManager\Test\Unit\ViewModel\Category;
 
-use Dnd\OfferManager\ViewModel\Category\Offer;
-use Dnd\OfferManager\Api\OfferRepositoryInterface;
+use Ubarenroom\OfferManager\ViewModel\Category\Offer;
+use Ubarenroom\OfferManager\Api\OfferRepositoryInterface;
 use Magento\Catalog\Model\Category;
 use Magento\Framework\UrlInterface;
 use Magento\Store\Model\Store;

@@ -1,9 +1,9 @@
 <?php
-namespace Dnd\OfferManager\Test\Unit\Controller\Adminhtml\Offer;
+namespace Ubarenroom\OfferManager\Test\Unit\Controller\Adminhtml\Offer;
 
-use Dnd\OfferManager\Controller\Adminhtml\Offer\Delete;
+use Ubarenroom\OfferManager\Controller\Adminhtml\Offer\Delete;
 use Magento\Backend\App\Action\Context;
-use Dnd\OfferManager\Api\OfferRepositoryInterface;
+use Ubarenroom\OfferManager\Api\OfferRepositoryInterface;
 use Magento\Backend\Model\View\Result\Redirect;
 use Magento\Backend\Model\View\Result\RedirectFactory;
 use Magento\Framework\Message\ManagerInterface;

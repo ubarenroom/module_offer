@@ -1,14 +1,14 @@
 <?php
-namespace Dnd\OfferManager\Controller\Adminhtml\Offer;
+namespace Ubarenroom\OfferManager\Controller\Adminhtml\Offer;
 
 use Magento\Framework\App\Action\HttpPostActionInterface;
 use Magento\Backend\App\Action\Context;
-use Dnd\OfferManager\Api\OfferRepositoryInterface;
-use Dnd\OfferManager\Model\Offer;
-use Dnd\OfferManager\Model\OfferFactory;
+use Ubarenroom\OfferManager\Api\OfferRepositoryInterface;
+use Ubarenroom\OfferManager\Model\Offer;
+use Ubarenroom\OfferManager\Model\OfferFactory;
 use Magento\Framework\App\Request\DataPersistorInterface;
 use Magento\Framework\Exception\LocalizedException;
-use Dnd\OfferManager\Model\ImageUploader;
+use Ubarenroom\OfferManager\Model\ImageUploader;
 use Magento\Framework\Filter\FilterInput;
 use Magento\Framework\Stdlib\DateTime\Filter\Date;
 use Magento\Framework\Stdlib\DateTime\TimezoneInterface;
@@ -22,7 +22,7 @@ class Save extends \Magento\Backend\App\Action implements HttpPostActionInterfac
     /**
      * Admin Resource
      */
-    public const ADMIN_RESOURCE = 'Dnd_OfferManager::offer';
+    public const ADMIN_RESOURCE = 'Ubarenroom_OfferManager::offer';
 
     /**
      * @var TimezoneInterface|mixed

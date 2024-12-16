@@ -8,15 +8,15 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <script src="Dnd_OfferManager::js/slickslider.js" />
+        <script src="Ubarenroom_OfferManager::js/slickslider.js" />
     </head>
     <body>
         <referenceContainer name="top.container">
             <block class="Magento\Catalog\Block\Category\View"
                    name="category.offer"
-                   template="Dnd_OfferManager::category/offers.phtml">
+                   template="Ubarenroom_OfferManager::category/offers.phtml">
                 <arguments>
-                    <argument name="view_model" xsi:type="object">Dnd\OfferManager\ViewModel\Category\Offer</argument>
+                    <argument name="view_model" xsi:type="object">Ubarenroom\OfferManager\ViewModel\Category\Offer</argument>
                 </arguments>
             </block>
         </referenceContainer>

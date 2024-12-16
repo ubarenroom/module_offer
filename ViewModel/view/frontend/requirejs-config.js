@@ -1,6 +1,6 @@
 var config = {
     paths: {
-        slick: 'Dnd_OfferManager/js/slickslider'
+        slick: 'Ubarenroom_OfferManager/js/slickslider'
     },
     shim: {
         slick: {

@@ -3,13 +3,13 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Dnd\OfferManager\Model\Offer;
+namespace Ubarenroom\OfferManager\Model\Offer;
 
-use Dnd\OfferManager\Model\ResourceModel\Offer\CollectionFactory;
+use Ubarenroom\OfferManager\Model\ResourceModel\Offer\CollectionFactory;
 use Magento\Framework\App\Request\DataPersistorInterface;
 use Magento\Ui\DataProvider\Modifier\PoolInterface;
 use Magento\Store\Model\StoreManagerInterface;
-use Dnd\OfferManager\Model\ImageUploader;
+use Ubarenroom\OfferManager\Model\ImageUploader;
 use Magento\Catalog\Model\Category\FileInfo;
 use Magento\Framework\Filesystem\DirectoryList;
 use Magento\Framework\Filesystem\Io\File;
@@ -68,7 +68,7 @@ class DataProvider extends \Magento\Ui\DataProvider\ModifierPoolDataProvider
             return $this->loadedData;
         }
         $items = $this->collection->getItems();
-        /** @var \Dnd\OfferManager\Model\Offer $offer */
+        /** @var \Ubarenroom\OfferManager\Model\Offer $offer */
         foreach ($items as $offer) {
             $this->loadedData[$offer->getOfferId()] = $offer->getData();
             $this->manageImage($offer);
@@ -89,7 +89,7 @@ class DataProvider extends \Magento\Ui\DataProvider\ModifierPoolDataProvider
     /**
      * Manage Image data
      *
-     * @param \Dnd\OfferManager\Model\Offer $offer
+     * @param \Ubarenroom\OfferManager\Model\Offer $offer
      * @return void
      * @throws \Magento\Framework\Exception\NoSuchEntityException
      */

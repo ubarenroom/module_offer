@@ -1,5 +1,5 @@
 {
-  "name": "dnd/module-offer-manager",
+  "name": "ubarenroom/module-offer-manager",
   "version": "1.0.0",
   "description": "Magento 2 module offer Manager",
   "type": "magento2-module",
@@ -14,7 +14,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Dnd\\OfferManager\\": ""
+      "Ubarenroom\\OfferManager\\": ""
     }
   }
 }

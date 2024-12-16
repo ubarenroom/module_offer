@@ -1,12 +1,12 @@
 <?php
-namespace Dnd\OfferManager\Test\Unit\Model;
+namespace Ubarenroom\OfferManager\Test\Unit\Model;
 
-use Dnd\OfferManager\Api\Data\OfferInterface;
+use Ubarenroom\OfferManager\Api\Data\OfferInterface;
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Dnd\OfferManager\Model\Offer
+ * @covers \Ubarenroom\OfferManager\Model\Offer
  */
 class OfferTest extends TestCase
 {
@@ -34,7 +34,7 @@ class OfferTest extends TestCase
     /**
      * Object to test
      *
-     * @var \Dnd\OfferManager\Model\Offer
+     * @var \Ubarenroom\OfferManager\Model\Offer
      */
     private $offerModel;
 
@@ -47,7 +47,7 @@ class OfferTest extends TestCase
         $this->context = $this->createMock(\Magento\Framework\Model\Context::class);
         $this->registry = $this->createMock(\Magento\Framework\Registry::class);
         $this->offerModel = $this->objectManager->getObject(
-            \Dnd\OfferManager\Model\Offer::class,
+            \Ubarenroom\OfferManager\Model\Offer::class,
             [
                 'context' => $this->context,
                 'registry' => $this->registry,

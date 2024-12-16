@@ -1,9 +1,9 @@
 <?php
-namespace Dnd\OfferManager\Test\Unit\Controller\Adminhtml\Offer;
+namespace Ubarenroom\OfferManager\Test\Unit\Controller\Adminhtml\Offer;
 
-use Dnd\OfferManager\Controller\Adminhtml\Offer\Edit;
+use Ubarenroom\OfferManager\Controller\Adminhtml\Offer\Edit;
 use Magento\Backend\App\Action\Context;
-use Dnd\OfferManager\Model\Offer;
+use Ubarenroom\OfferManager\Model\Offer;
 use Magento\Framework\Message\ManagerInterface;
 use Magento\Framework\View\Page\Config;
 use Magento\Framework\View\Page\Title;
@@ -74,7 +74,7 @@ class EditTest extends TestCase
             ->method('getParam')
             ->with('offer_id')
             ->willReturn($offerId);
-        $offerMock = $this->createMock(\Dnd\OfferManager\Api\Data\OfferInterface::class);
+        $offerMock = $this->createMock(\Ubarenroom\OfferManager\Api\Data\OfferInterface::class);
 
         $this->offer->expects($this->any())
             ->method('load')

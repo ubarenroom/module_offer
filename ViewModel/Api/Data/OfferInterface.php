@@ -1,5 +1,5 @@
 <?php
-namespace Dnd\OfferManager\Api\Data;
+namespace Ubarenroom\OfferManager\Api\Data;
 
 interface OfferInterface
 {

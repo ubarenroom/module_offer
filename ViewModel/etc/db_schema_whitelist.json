@@ -1,5 +1,5 @@
 {
-    "dnd_offer": {
+    "ubarenroom_offer": {
         "column": {
             "entity_id": true,
             "label": true,
@@ -9,21 +9,21 @@
             "end_date": true
         },
         "index": {
-            "DND_OFFER_START_DATE_END_DATE": true
+            "UBARENROOM_OFFER_START_DATE_END_DATE": true
         },
         "constraint": {
             "PRIMARY": true
         }
     },
-    "dnd_offer_category": {
+    "ubarenroom_offer_category": {
         "column": {
             "offer_id": true,
             "category_id": true
         },
         "constraint": {
             "PRIMARY": true,
-            "DND_OFFER_CATEGORY_OFFER_ID_DND_OFFER_ENTITY_ID": true,
-            "DND_OFFER_CATEGORY_CATEGORY_ID_CATALOG_CATEGORY_ENTITY_ENTITY_ID": true
+            "UBARENROOM_OFFER_CATEGORY_OFFER_ID_UBARENROOM_OFFER_ENTITY_ID": true,
+            "UBARENROOM_OFFER_CATEGORY_CATEGORY_ID_CATALOG_CATEGORY_ENTITY_ENTITY_ID": true
         }
     }
 }

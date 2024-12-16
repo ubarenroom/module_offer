@@ -5,9 +5,9 @@
  */
 declare(strict_types=1);
 
-namespace Dnd\OfferManager\Model;
+namespace Ubarenroom\OfferManager\Model;
 
-use Dnd\OfferManager\Api\Data\OfferSearchResultsInterface;
+use Ubarenroom\OfferManager\Api\Data\OfferSearchResultsInterface;
 use Magento\Framework\Api\SearchResults;
 
 /**

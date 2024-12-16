@@ -9,7 +9,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
         <route id="offer" frontName="offer">
-            <module name="Dnd_OfferManager" before="Magento_Backend" />
+            <module name="Ubarenroom_OfferManager" before="Magento_Backend" />
         </route>
     </router>
 </config>

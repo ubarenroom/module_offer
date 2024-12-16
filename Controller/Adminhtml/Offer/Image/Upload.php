@@ -3,11 +3,11 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Dnd\OfferManager\Controller\Adminhtml\Offer\Image;
+namespace Ubarenroom\OfferManager\Controller\Adminhtml\Offer\Image;
 
 use Magento\Framework\App\Action\HttpPostActionInterface;
 use Magento\Framework\Controller\ResultFactory;
-use Dnd\OfferManager\Model\ImageUploader;
+use Ubarenroom\OfferManager\Model\ImageUploader;
 use Magento\Backend\App\Action\Context;
 
 class Upload extends \Magento\Backend\App\Action implements HttpPostActionInterface
@@ -30,7 +30,7 @@ class Upload extends \Magento\Backend\App\Action implements HttpPostActionInterf
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Dnd_OfferManager::offer');
+        return $this->_authorization->isAllowed('Ubarenroom_OfferManager::offer');
     }
 
     /**

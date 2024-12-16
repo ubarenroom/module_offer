@@ -1,5 +1,5 @@
 <?php
-namespace Dnd\OfferManager\Ui\Component\Offer\Listing\Column;
+namespace Ubarenroom\OfferManager\Ui\Component\Offer\Listing\Column;
 
 use Magento\Catalog\Helper\Image as HelperImage;
 use Magento\Framework\Exception\NoSuchEntityException;

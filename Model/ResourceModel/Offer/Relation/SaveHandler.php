@@ -1,10 +1,10 @@
 <?php
-namespace Dnd\OfferManager\Model\ResourceModel\Offer\Relation;
+namespace Ubarenroom\OfferManager\Model\ResourceModel\Offer\Relation;
 
 use Magento\Framework\EntityManager\MetadataPool;
 use Magento\Framework\EntityManager\Operation\ExtensionInterface;
-use Dnd\OfferManager\Api\Data\OfferInterface;
-use Dnd\OfferManager\Model\ResourceModel\Offer;
+use Ubarenroom\OfferManager\Api\Data\OfferInterface;
+use Ubarenroom\OfferManager\Model\ResourceModel\Offer;
 
 class SaveHandler implements ExtensionInterface
 {
@@ -41,7 +41,7 @@ class SaveHandler implements ExtensionInterface
         $oldCategories = $this->resourceOffer->lookupCategoryIds((int)$entity->getOfferId());
         $newCategories = (array)$entity->getCategoryIds();
 
-        $table = $this->resourceOffer->getTable('dnd_offer_category');
+        $table = $this->resourceOffer->getTable('ubarenroom_offer_category');
 
         $delete = array_diff($oldCategories, $newCategories);
         if ($delete) {

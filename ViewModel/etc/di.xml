@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Dnd\OfferManager\Api\Data\OfferInterface"
-                type="Dnd\OfferManager\Model\Offer" />
-    <preference for="Dnd\OfferManager\Api\OfferRepositoryInterface"
-                type="Dnd\OfferManager\Model\OfferRepository" />
-    <preference for="Dnd\OfferManager\Api\Data\OfferSearchResultsInterface"
-                type="Dnd\OfferManager\Model\OfferSearchResults" />
+    <preference for="Ubarenroom\OfferManager\Api\Data\OfferInterface"
+                type="Ubarenroom\OfferManager\Model\Offer" />
+    <preference for="Ubarenroom\OfferManager\Api\OfferRepositoryInterface"
+                type="Ubarenroom\OfferManager\Model\OfferRepository" />
+    <preference for="Ubarenroom\OfferManager\Api\Data\OfferSearchResultsInterface"
+                type="Ubarenroom\OfferManager\Model\OfferSearchResults" />
 
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
@@ -17,12 +17,12 @@
     </type>
     <virtualType name="OfferGridCollection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
         <arguments>
-            <argument name="mainTable" xsi:type="string">dnd_offer</argument>
-            <argument name="resourceModel" xsi:type="string">Dnd\OfferManager\Model\ResourceModel\Offer</argument>
+            <argument name="mainTable" xsi:type="string">ubarenroom_offer</argument>
+            <argument name="resourceModel" xsi:type="string">Ubarenroom\OfferManager\Model\ResourceModel\Offer</argument>
         </arguments>
     </virtualType>
 
-    <virtualType name="Dnd\OfferManager\OfferImageUpload" type="Dnd\OfferManager\Model\ImageUploader">
+    <virtualType name="Ubarenroom\OfferManager\OfferImageUpload" type="Ubarenroom\OfferManager\Model\ImageUploader">
         <arguments>
             <argument name="baseTmpPath" xsi:type="string">wysiwyg/tmp/offer</argument>
             <argument name="basePath" xsi:type="string">wysiwyg/offer</argument>
@@ -40,17 +40,17 @@
             </argument>
         </arguments>
     </virtualType>
-    <type name="Dnd\OfferManager\Controller\Adminhtml\Offer\Image\Upload">
+    <type name="Ubarenroom\OfferManager\Controller\Adminhtml\Offer\Image\Upload">
         <arguments>
-            <argument name="imageUploader" xsi:type="object">Dnd\OfferManager\OfferImageUpload</argument>
+            <argument name="imageUploader" xsi:type="object">Ubarenroom\OfferManager\OfferImageUpload</argument>
         </arguments>
     </type>
 
     <type name="Magento\Framework\Model\Entity\RepositoryFactory">
         <arguments>
             <argument name="entities" xsi:type="array">
-                <item name="Dnd\OfferManager\Api\Data\OfferInterface" xsi:type="string">
-                    Dnd\OfferManager\Api\OfferRepositoryInterface
+                <item name="Ubarenroom\OfferManager\Api\Data\OfferInterface" xsi:type="string">
+                    Ubarenroom\OfferManager\Api\OfferRepositoryInterface
                 </item>
             </argument>
         </arguments>
@@ -58,8 +58,8 @@
     <type name="Magento\Framework\EntityManager\MetadataPool">
         <arguments>
             <argument name="metadata" xsi:type="array">
-                <item name="Dnd\OfferManager\Api\Data\OfferInterface" xsi:type="array">
-                    <item name="entityTableName" xsi:type="string">dnd_offer</item>
+                <item name="Ubarenroom\OfferManager\Api\Data\OfferInterface" xsi:type="array">
+                    <item name="entityTableName" xsi:type="string">ubarenroom_offer</item>
                     <item name="identifierField" xsi:type="string">offer_id</item>
                 </item>
             </argument>
@@ -68,20 +68,20 @@
     <type name="Magento\Framework\EntityManager\Operation\ExtensionPool">
         <arguments>
             <argument name="extensionActions" xsi:type="array">
-                <item name="Dnd\OfferManager\Api\Data\OfferInterface" xsi:type="array">
+                <item name="Ubarenroom\OfferManager\Api\Data\OfferInterface" xsi:type="array">
                     <item name="read" xsi:type="array">
                         <item name="OfferReader" xsi:type="string">
-                            Dnd\OfferManager\Model\ResourceModel\Offer\Relation\ReadHandler
+                            Ubarenroom\OfferManager\Model\ResourceModel\Offer\Relation\ReadHandler
                         </item>
                     </item>
                     <item name="create" xsi:type="array">
                         <item name="OfferCreator" xsi:type="string">
-                            Dnd\OfferManager\Model\ResourceModel\Offer\Relation\SaveHandler
+                            Ubarenroom\OfferManager\Model\ResourceModel\Offer\Relation\SaveHandler
                         </item>
                     </item>
                     <item name="update" xsi:type="array">
                         <item name="OfferUpdater" xsi:type="string">
-                            Dnd\OfferManager\Model\ResourceModel\Offer\Relation\SaveHandler
+                            Ubarenroom\OfferManager\Model\ResourceModel\Offer\Relation\SaveHandler
                         </item>
                     </item>
                 </item>
@@ -91,7 +91,7 @@
     <type name="Magento\Framework\EntityManager\HydratorPool">
         <arguments>
             <argument name="hydrators" xsi:type="array">
-                <item name="Dnd\OfferManager\Api\Data\OfferInterface" xsi:type="string">
+                <item name="Ubarenroom\OfferManager\Api\Data\OfferInterface" xsi:type="string">
                     Magento\Framework\EntityManager\AbstractModelHydrator
                 </item>
             </argument>

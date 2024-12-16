@@ -1,7 +1,7 @@
 <?php
-namespace Dnd\OfferManager\Api;
+namespace Ubarenroom\OfferManager\Api;
 
-use Dnd\OfferManager\Api\Data\OfferInterface;
+use Ubarenroom\OfferManager\Api\Data\OfferInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Api\SearchResultsInterface;
 

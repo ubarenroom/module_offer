@@ -1,7 +1,7 @@
 <?php
-namespace Dnd\OfferManager\Model;
+namespace Ubarenroom\OfferManager\Model;
 
-use Dnd\OfferManager\Api\Data\OfferInterface;
+use Ubarenroom\OfferManager\Api\Data\OfferInterface;
 use Magento\Framework\DataObject\IdentityInterface;
 use Magento\Framework\Model\AbstractModel;
 
@@ -26,7 +26,7 @@ class Offer extends AbstractModel implements OfferInterface, IdentityInterface
      */
     protected function _construct()
     {
-        $this->_init(\Dnd\OfferManager\Model\ResourceModel\Offer::class);
+        $this->_init(\Ubarenroom\OfferManager\Model\ResourceModel\Offer::class);
     }
 
     /**

@@ -5,12 +5,12 @@
  */
 declare(strict_types=1);
 
-namespace Dnd\OfferManager\ViewModel\Category;
+namespace Ubarenroom\OfferManager\ViewModel\Category;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\UrlInterface;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
-use Dnd\OfferManager\Api\OfferRepositoryInterface;
+use Ubarenroom\OfferManager\Api\OfferRepositoryInterface;
 use Magento\Catalog\Model\Category;
 use Magento\Store\Model\StoreManagerInterface;
 use Magento\Framework\Stdlib\DateTime;
@@ -39,7 +39,7 @@ class Offer implements ArgumentInterface
      * Get Offers about category
      *
      * @param Category $category
-     * @return \Dnd\OfferManager\Api\Data\OfferInterface[]
+     * @return \Ubarenroom\OfferManager\Api\Data\OfferInterface[]
      */
     public function getOffers(Category $category)
     {

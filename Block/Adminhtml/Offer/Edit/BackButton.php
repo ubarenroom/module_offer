@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Dnd\OfferManager\Block\Adminhtml\Offer\Edit;
+namespace Ubarenroom\OfferManager\Block\Adminhtml\Offer\Edit;
 
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 

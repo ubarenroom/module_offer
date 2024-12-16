@@ -1,16 +1,16 @@
 <?php
-namespace Dnd\OfferManager\Controller\Adminhtml\Offer;
+namespace Ubarenroom\OfferManager\Controller\Adminhtml\Offer;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\App\Action\HttpPostActionInterface;
-use Dnd\OfferManager\Api\OfferRepositoryInterface;
+use Ubarenroom\OfferManager\Api\OfferRepositoryInterface;
 
 class Delete extends \Magento\Backend\App\Action implements HttpPostActionInterface
 {
     /**
      * Admin Resource
      */
-    public const ADMIN_RESOURCE = 'Dnd_OfferManager::offer';
+    public const ADMIN_RESOURCE = 'Ubarenroom_OfferManager::offer';
 
     /**
      * @param Context $context

@@ -10,9 +10,9 @@
     </argument>
     <settings>
         <buttons>
-            <button name="save" class="Dnd\OfferManager\Block\Adminhtml\Offer\Edit\SaveButton"/>
-            <button name="delete" class="Dnd\OfferManager\Block\Adminhtml\Offer\Edit\DeleteButton"/>
-            <button name="back" class="Dnd\OfferManager\Block\Adminhtml\Offer\Edit\BackButton"/>
+            <button name="save" class="Ubarenroom\OfferManager\Block\Adminhtml\Offer\Edit\SaveButton"/>
+            <button name="delete" class="Ubarenroom\OfferManager\Block\Adminhtml\Offer\Edit\DeleteButton"/>
+            <button name="back" class="Ubarenroom\OfferManager\Block\Adminhtml\Offer\Edit\BackButton"/>
         </buttons>
         <namespace>offer_edit_form</namespace>
         <dataScope>data</dataScope>
@@ -29,7 +29,7 @@
         <settings>
             <submitUrl path="offer/offer/save"/>
         </settings>
-        <dataProvider class="Dnd\OfferManager\Model\Offer\DataProvider" name="offer_form_data_source">
+        <dataProvider class="Ubarenroom\OfferManager\Model\Offer\DataProvider" name="offer_form_data_source">
             <settings>
                 <requestFieldName>offer_id</requestFieldName>
                 <primaryFieldName>offer_id</primaryFieldName>

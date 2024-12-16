@@ -1,5 +1,5 @@
 <?php
-namespace Dnd\OfferManager\Model\ResourceModel\Offer;
+namespace Ubarenroom\OfferManager\Model\ResourceModel\Offer;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
@@ -11,8 +11,8 @@ class Collection extends AbstractCollection
     protected function _construct()
     {
         $this->_init(
-            \Dnd\OfferManager\Model\Offer::class,
-            \Dnd\OfferManager\Model\ResourceModel\Offer::class
+            \Ubarenroom\OfferManager\Model\Offer::class,
+            \Ubarenroom\OfferManager\Model\ResourceModel\Offer::class
         );
     }
 }
