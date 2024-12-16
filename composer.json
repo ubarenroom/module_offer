@@ -1,6 +1,6 @@
 {
   "name": "ubarenroom/module-offer-manager",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Magento 2 module offer Manager",
   "type": "magento2-module",
   "require": {
